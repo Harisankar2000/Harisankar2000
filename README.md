@@ -3,7 +3,7 @@
 <img align="right" alt="Coding" width="400" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif">
 
 <p align="left">
-  <b>Results-driven Backend Engineer with 2.5 years of experience in developing scalable backend solutions and microservices architecture using Node.js, AWS Lambda, PostgreSQL, and MongoDB. Proven track record in building secure, cloud-based applications and optimizing performance. Skilled in working with Agile methodologies, and delivering backend services for diverse applications, including a Clinical Study Report (CSR) automation tool and a unified login system. Demonstrates expertise in cloud computing, data management, and API development while maintaining high compliance standards and enhancing system efficiency.</b>
+  <b>Results-driven Backend Engineer with a strong background in designing scalable backend solutions and microservices architectures. Proficient in technologies like Node.js, AWS Lambda, PostgreSQL, and MongoDB, I have developed secure, cloud-based applications while enhancing performance and system efficiency. Experienced with Agile methodologies, I contribute to diverse projects—from automation tools for Clinical Study Reports (CSR) to unified login systems—emphasizing cloud computing, data management, and API development, while prioritizing compliance and high operational standards.</b>
 </p>
 
 <p align="left"> 
