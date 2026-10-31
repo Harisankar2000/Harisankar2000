@@ -62,7 +62,7 @@ I'm a backend engineer with **4+ years** of experience building scalable, secure
 ### 🛠️ Tech stack
 
 **Languages**
-<br/><img src="https://skillicons.dev/icons?i=ts,js,python" />
+<br/><img src="https://skillicons.dev/icons?i=js,ts,python" />
 
 **Backend & APIs:** Node.js · Fastify · Express · REST · GraphQL · WebSockets
 <br/><img src="https://skillicons.dev/icons?i=nodejs,express,graphql,fastapi" />
