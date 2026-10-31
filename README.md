@@ -22,11 +22,12 @@ I'm a backend engineer with **4+ years** of experience building scalable, secure
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h4><a href="https://github.com/Harisankar2000/ledgerly">💳 Ledgerly</a></h4>
-      <p>Double-entry <b>payment ledger and wallet service</b> with a React dashboard: wallets, transfers, refunds, card-style holds, idempotent APIs, <b>transactional outbox → Kafka</b>, HMAC-signed webhooks with retries, and reconciliation reports.</p>
-      <p>Money safety via row-level locking, deadlock-free lock ordering and a zero-sum DB trigger, proven by concurrency tests (50 parallel transfers, zero overdrafts).</p>
+      <h4><a href="https://github.com/Harisankar2000/neobank">🏦 NeoBank</a></h4>
+      <p>Simulated <b>digital bank</b> with a customer app and an admin console: accounts, transfers, beneficiaries, daily limits, CSV/PDF statements and notifications. Staff review risky transfers, post reversals, freeze accounts and run <b>reconciliation</b>.</p>
+      <p>Double-entry ledger with ordered row locks, <b>idempotency keys</b>, risk rules that hold money in suspense, and a <b>transactional outbox → Kafka</b>. Proven by concurrency tests (50 parallel transfers, exactly 10 succeed, no deadlocks).</p>
       <p>
         <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" />
+        <img src="https://img.shields.io/badge/Fastify-000000?logo=fastify&logoColor=white" />
         <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white" />
         <img src="https://img.shields.io/badge/Kafka-231F20?logo=apachekafka&logoColor=white" />
         <img src="https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB" />
