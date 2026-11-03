@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Harisankar Sahoo</h1>
-<h3 align="center">Backend Engineer · Node.js · TypeScript · PostgreSQL · Kafka · AWS</h3>
+<h3 align="center">Backend Engineer · Node.js · JavaScript · TypeScript · PostgreSQL · Kafka · AWS</h3>
 
 <p align="center">
   <a href="https://linkedin.com/in/harisankar-sahoo"><img src="https://img.shields.io/badge/LinkedIn-harisankar--sahoo-0A66C2?logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
@@ -10,42 +10,42 @@
 I'm a backend engineer with **4+ years** of experience building scalable, secure Node.js services across **fintech, EV fleet management, healthcare/pharma and edtech**. I like problems where correctness matters: real-time data pipelines, money movement and systems that must not lose an event.
 
 - 🔭 **Now:** Software Engineer at **TapFin** (Mumbai), building the backend for an EV fleet-finance platform: real-time telemetry, lender risk analytics, loan origination and notifications
-- 🧱 **Day to day:** Node.js/TypeScript microservices on Fastify, PostgreSQL & ClickHouse, Kafka & BullMQ pipelines, Redis, Docker and Jenkins CI/CD
+- 🧱 **Day to day:** Node.js (JavaScript) microservices on Fastify, PostgreSQL & ClickHouse, Kafka & BullMQ pipelines, Redis, Docker and Jenkins CI/CD
 - 🌱 **Exploring:** distributed systems patterns: transactional outbox, idempotency, workflow orchestration
 - 💬 **Ask me about:** event-driven architecture, double-entry ledgers, Kafka, PostgreSQL concurrency
 - 📫 **Reach me:** [LinkedIn](https://linkedin.com/in/harisankar-sahoo) or harisankarsahoo58@gmail.com
 
 ---
 
-### 🚀 Featured projects
+### 🚀 Featured project
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h4><a href="https://github.com/Harisankar2000/neobank">🏦 NeoBank</a></h4>
-      <p>Simulated <b>digital bank</b> with a customer app and an admin console: accounts, transfers, beneficiaries, daily limits, CSV/PDF statements and notifications. Staff review risky transfers, post reversals, freeze accounts and run <b>reconciliation</b>.</p>
-      <p>Double-entry ledger with ordered row locks, <b>idempotency keys</b>, risk rules that hold money in suspense, and a <b>transactional outbox → Kafka</b>. Proven by concurrency tests (50 parallel transfers, exactly 10 succeed, no deadlocks).</p>
-      <p>
-        <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" />
-        <img src="https://img.shields.io/badge/Fastify-000000?logo=fastify&logoColor=white" />
-        <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white" />
-        <img src="https://img.shields.io/badge/Kafka-231F20?logo=apachekafka&logoColor=white" />
-        <img src="https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB" />
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h4><a href="https://github.com/Harisankar2000/flowforge">⚙️ FlowForge</a></h4>
-      <p>Distributed <b>job scheduler and DAG workflow engine</b>: parallel steps across horizontally scaled workers, per-step retries with exponential backoff, timeouts, timezone-aware cron, idempotent triggers and a dead-letter queue with resume-from-failure.</p>
-      <p>Crash-safe orchestration using deterministic job IDs and conditional state transitions. Ships with Prometheus metrics, Swagger docs and CI.</p>
-      <p>
-        <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" />
-        <img src="https://img.shields.io/badge/BullMQ-DC382D?logo=redis&logoColor=white" />
-        <img src="https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white" />
-        <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" />
-      </p>
-    </td>
-  </tr>
-</table>
+#### [🏦 NeoBank: digital banking platform](https://github.com/Harisankar2000/neobank)
+
+<p>
+  <a href="https://neobank-harisankar.vercel.app"><img src="https://img.shields.io/badge/Live_demo-neobank--harisankar.vercel.app-4F46E5?logo=vercel&logoColor=white" alt="Live demo" /></a>
+  <a href="https://github.com/Harisankar2000/neobank"><img src="https://img.shields.io/badge/Source-GitHub-181717?logo=github&logoColor=white" alt="Source code" /></a>
+  <a href="https://github.com/Harisankar2000/neobank/releases/tag/v1.0.0"><img src="https://img.shields.io/badge/Release-v1.0.0-2EA44F" alt="Release v1.0.0" /></a>
+</p>
+
+Simulated **digital bank** with a customer app and an admin console: accounts, transfers, beneficiaries, daily limits, CSV/PDF statements and notifications. Staff review risky transfers, post reversals, freeze accounts and run **reconciliation**.
+
+- **Double-entry ledger:** every money movement posts balanced debit and credit entries; PostgreSQL triggers reject unbalanced or edited journal entries
+- **Safe transfers:** atomic, concurrency-safe (ordered row locks, deadlock retries) and **idempotent** (Idempotency-Key stored in the same transaction), proven by tests: 50 parallel transfers against one balance, exactly 10 succeed
+- **Fraud controls:** daily limits and risk rules (large amount, new beneficiary, Redis velocity counter) hold money in a suspense account until an admin approves
+- **Events:** **transactional outbox → Kafka** with an idempotent consumer, so no event is lost or processed twice
+- **Deployed:** React on Vercel, API on Render, Postgres on Neon, Redis on Upstash
+
+Try it: log in as `harisankar@neobank.dev` / `NeoBank@2026`; the admin console is at `/admin`.
+
+<p>
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Fastify-000000?logo=fastify&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Redis-DC382D?logo=redis&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kafka-231F20?logo=apachekafka&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white" />
+</p>
 
 ---
 
@@ -81,6 +81,9 @@ I'm a backend engineer with **4+ years** of experience building scalable, secure
 ### 📊 GitHub stats
 
 <p>
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=harisankar2000&show_icons=true&hide_border=true&count_private=true" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs?username=harisankar2000&layout=compact&hide_border=true" alt="Top languages" />
+  <img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Harisankar2000&theme=default" alt="GitHub stats" />
+  <img height="165" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Harisankar2000&theme=default" alt="Top languages" />
+</p>
+<p>
+  <img src="https://streak-stats.demolab.com?user=Harisankar2000&hide_border=true" alt="Contribution streak" />
 </p>
